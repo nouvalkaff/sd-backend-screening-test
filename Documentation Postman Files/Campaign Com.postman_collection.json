@@ -1,0 +1,1263 @@
+{
+	"info": {
+		"_postman_id": "5bab7f85-161b-4adc-a73c-b0e7beb1a6c0",
+		"name": "Campaign Com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movie Routes",
+			"item": [
+				{
+					"name": "Get All Movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/mv/all",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"mv",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/mv/all",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"mv",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "954"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3ba-7tOfzy3nfnx1JZkgwy7IJn2dZAw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:43:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statusText\": \"OK\",\n    \"success\": true,\n    \"message\": \"Successfully getting you all movie data\",\n    \"result\": [\n        {\n            \"id\": 1,\n            \"name\": \"The Shawshank Redemption\",\n            \"language\": \"english\",\n            \"status\": \"ended\",\n            \"rating\": 5,\n            \"movie_casts\": [\n                {\n                    \"id\": 1,\n                    \"cast\": {\n                        \"name\": \"Tim Robbins\",\n                        \"birthday\": \"1958-10-16T00:00:00.000Z\",\n                        \"deadday\": null,\n                        \"rating\": 4\n                    }\n                },\n                {\n                    \"id\": 2,\n                    \"cast\": {\n                        \"name\": \"Morgan Freeman\",\n                        \"birthday\": \"1937-06-01T00:00:00.000Z\",\n                        \"deadday\": null,\n                        \"rating\": 5\n                    }\n                },\n                {\n                    \"id\": 3,\n                    \"cast\": {\n                        \"name\": \"Bob Gunton\",\n                        \"birthday\": \"1945-11-15T00:00:00.000Z\",\n                        \"deadday\": null,\n                        \"rating\": 4\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"The Godfather\",\n            \"language\": \"english\",\n            \"status\": \"ended\",\n            \"rating\": 5,\n            \"movie_casts\": [\n                {\n                    \"id\": 4,\n                    \"cast\": {\n                        \"name\": \"Al Pacino\",\n                        \"birthday\": \"1940-04-25T00:00:00.000Z\",\n                        \"deadday\": null,\n                        \"rating\": 5\n                    }\n                },\n                {\n                    \"id\": 5,\n                    \"cast\": {\n                        \"name\": \"Marlon Brando\",\n                        \"birthday\": \"1924-04-03T00:00:00.000Z\",\n                        \"deadday\": \"2004-07-01T00:00:00.000Z\",\n                        \"rating\": 4\n                    }\n                },\n                {\n                    \"id\": 6,\n                    \"cast\": {\n                        \"name\": \"James Caan\",\n                        \"birthday\": \"1940-03-26T00:00:00.000Z\",\n                        \"deadday\": null,\n                        \"rating\": 4\n                    }\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get A Movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/mv/1",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"mv",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/mv/1",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"mv",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "517"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"205-zVgaGcMO1TtLNOl5RHuuBT2ZVV0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:43:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statusText\": \"OK\",\n    \"success\": true,\n    \"message\": \"Successfully get one movie data\",\n    \"result\": {\n        \"id\": 1,\n        \"name\": \"The Shawshank Redemption\",\n        \"language\": \"english\",\n        \"status\": \"ended\",\n        \"rating\": 5,\n        \"movie_casts\": [\n            {\n                \"id\": 1,\n                \"cast\": {\n                    \"name\": \"Tim Robbins\",\n                    \"birthday\": \"1958-10-16T00:00:00.000Z\",\n                    \"deadday\": null,\n                    \"rating\": 4\n                }\n            },\n            {\n                \"id\": 2,\n                \"cast\": {\n                    \"name\": \"Morgan Freeman\",\n                    \"birthday\": \"1937-06-01T00:00:00.000Z\",\n                    \"deadday\": null,\n                    \"rating\": 5\n                }\n            },\n            {\n                \"id\": 3,\n                \"cast\": {\n                    \"name\": \"Bob Gunton\",\n                    \"birthday\": \"1945-11-15T00:00:00.000Z\",\n                    \"deadday\": null,\n                    \"rating\": 4\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create A Movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Example Movie",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "indonesia",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "ended",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"description": "{required}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/mv/crt",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"mv",
+								"crt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "The Raid: Redemption",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "indonesia",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ended",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "4",
+											"description": "{required}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/mv/crt",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"mv",
+										"crt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "270"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10e-miq8SvOcyGTWajkqWcRYmKMbmtw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:43:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"A new movie data has been created\",\n    \"result\": {\n        \"id\": 3,\n        \"name\": \"The Raid: Redemption\",\n        \"language\": \"indonesia\",\n        \"status\": \"ended\",\n        \"rating\": \"4\",\n        \"updatedAt\": \"2021-09-07T15:43:51.152Z\",\n        \"createdAt\": \"2021-09-07T15:43:51.152Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update A Movie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "The Raid: Redemption",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "indonesia",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "ended",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "3",
+									"description": "{required}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/mv/upd/3",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"mv",
+								"upd",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "The Raid: Redemption",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "indonesia",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ended",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "3",
+											"description": "{required}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/mv/upd/3",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"mv",
+										"upd",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "458"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ca-3EZxhsNDlz248MWJfVvbaEZrtAA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:44:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"Movie data succesfully updated\",\n    \"result_update\": {\n        \"id\": 3,\n        \"name\": \"The Raid: Redemption\",\n        \"language\": \"indonesia\",\n        \"status\": \"ended\",\n        \"rating\": 3,\n        \"createdAt\": \"2021-09-07T15:43:51.000Z\",\n        \"updatedAt\": \"2021-09-07T15:44:35.000Z\"\n    },\n    \"result_previous\": {\n        \"id\": 3,\n        \"name\": \"The Raid: Redemption\",\n        \"language\": \"indonesia\",\n        \"status\": \"ended\",\n        \"rating\": 5,\n        \"createdAt\": \"2021-09-07T15:43:51.000Z\",\n        \"updatedAt\": \"2021-09-07T15:44:14.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete A Movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/mv/del/4",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"mv",
+								"del",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/mv/del/4",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"mv",
+										"del",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-GVSyXox2S0Ulm1MaDEeOBmDAKKE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:45:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"The movie ID 4 with name 'Example Movie' is deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cast Routes",
+			"item": [
+				{
+					"name": "Get All Casts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/cast/all",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"cast",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/cast/all",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"cast",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1369"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"559-r4fkjVZ8XFGGOKjR6zd84UyynC4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:45:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statusText\": \"OK\",\n    \"success\": true,\n    \"message\": \"Successfully getting you all cast data\",\n    \"result\": [\n        {\n            \"id\": 1,\n            \"name\": \"Tim Robbins\",\n            \"birthday\": \"1958-10-16T00:00:00.000Z\",\n            \"deadday\": null,\n            \"rating\": 4,\n            \"movie_casts\": [\n                {\n                    \"id\": 1,\n                    \"movie\": {\n                        \"name\": \"The Shawshank Redemption\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Morgan Freeman\",\n            \"birthday\": \"1937-06-01T00:00:00.000Z\",\n            \"deadday\": null,\n            \"rating\": 5,\n            \"movie_casts\": [\n                {\n                    \"id\": 2,\n                    \"movie\": {\n                        \"name\": \"The Shawshank Redemption\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Bob Gunton\",\n            \"birthday\": \"1945-11-15T00:00:00.000Z\",\n            \"deadday\": null,\n            \"rating\": 4,\n            \"movie_casts\": [\n                {\n                    \"id\": 3,\n                    \"movie\": {\n                        \"name\": \"The Shawshank Redemption\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Al Pacino\",\n            \"birthday\": \"1940-04-25T00:00:00.000Z\",\n            \"deadday\": null,\n            \"rating\": 5,\n            \"movie_casts\": [\n                {\n                    \"id\": 4,\n                    \"movie\": {\n                        \"name\": \"The Godfather\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Marlon Brando\",\n            \"birthday\": \"1924-04-03T00:00:00.000Z\",\n            \"deadday\": \"2004-07-01T00:00:00.000Z\",\n            \"rating\": 4,\n            \"movie_casts\": [\n                {\n                    \"id\": 5,\n                    \"movie\": {\n                        \"name\": \"The Godfather\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"name\": \"James Caan\",\n            \"birthday\": \"1940-03-26T00:00:00.000Z\",\n            \"deadday\": null,\n            \"rating\": 4,\n            \"movie_casts\": [\n                {\n                    \"id\": 6,\n                    \"movie\": {\n                        \"name\": \"The Godfather\",\n                        \"language\": \"english\",\n                        \"status\": \"ended\",\n                        \"rating\": 5\n                    }\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get A Cast",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/cast/2",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"cast",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/cast/2",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"cast",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "312"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"138-kfJS3K8nTz1YDqncDkFM88+fcI8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:46:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statusText\": \"OK\",\n    \"success\": true,\n    \"message\": \"Successfully get one cast data\",\n    \"result\": {\n        \"id\": 2,\n        \"name\": \"Morgan Freeman\",\n        \"birthday\": \"1937-06-01T00:00:00.000Z\",\n        \"deadday\": null,\n        \"rating\": 5,\n        \"movie_casts\": [\n            {\n                \"id\": 2,\n                \"movie\": {\n                    \"name\": \"The Shawshank Redemption\",\n                    \"language\": \"english\",\n                    \"status\": \"ended\",\n                    \"rating\": 5\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create A Cast",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "movie_id",
+									"value": "3",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Iko Uwais",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "1983-02-12",
+									"description": "YYYY-MM-DD {required}",
+									"type": "text"
+								},
+								{
+									"key": "deadday",
+									"value": "",
+									"description": "YYYY-MM-DD {Alive? Uncheck Box}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"description": "{required}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/cast/crt",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"cast",
+								"crt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "movie_id",
+											"value": "3",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Iko Uwais",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "birthday",
+											"value": "1983-02-12",
+											"description": "YYYY-MM-DD {required}",
+											"type": "text"
+										},
+										{
+											"key": "deadday",
+											"value": "",
+											"description": "YYYY-MM-DD {Alive? Uncheck Box}",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "rating",
+											"value": "4",
+											"description": "{required}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/cast/crt",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"cast",
+										"crt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "271"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10f-mLbWZ9GBLYOWwn4LrheNwAe3Q2A\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:46:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"A new cast data has been created\",\n    \"result\": {\n        \"deadday\": null,\n        \"id\": 7,\n        \"name\": \"Iko Uwais\",\n        \"birthday\": \"1983-02-12T00:00:00.000Z\",\n        \"rating\": \"4\",\n        \"updatedAt\": \"2021-09-07T15:46:39.452Z\",\n        \"createdAt\": \"2021-09-07T15:46:39.452Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update A Cast",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "movie_id",
+									"value": "3",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Iko Uwais",
+									"description": "{required}",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "1983-02-12",
+									"description": "YYYY - MM - DD {required}",
+									"type": "text"
+								},
+								{
+									"key": "deadday",
+									"value": "",
+									"description": "YYYY - MM - DD {Alive? Uncheck Box}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "rating",
+									"value": "5",
+									"description": "{required}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/cast/upd/7",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"cast",
+								"upd",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "movie_id",
+											"value": "3",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Iko Uwais",
+											"description": "{required}",
+											"type": "text"
+										},
+										{
+											"key": "birthday",
+											"value": "1983-02-12",
+											"description": "YYYY - MM - DD {required}",
+											"type": "text"
+										},
+										{
+											"key": "deadday",
+											"value": "",
+											"description": "YYYY - MM - DD {Alive? Uncheck Box}",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "rating",
+											"value": "5",
+											"description": "{required}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/cast/upd/7",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"cast",
+										"upd",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "461"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1cd-07T0s7oiGXq6o99HV5+SRTR/A14\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:48:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"Cast data succesfully updated\",\n    \"result_update\": {\n        \"id\": 7,\n        \"name\": \"Iko Uwais\",\n        \"birthday\": \"1983-02-12T00:00:00.000Z\",\n        \"deadday\": null,\n        \"rating\": 5,\n        \"createdAt\": \"2021-09-07T15:46:39.000Z\",\n        \"updatedAt\": \"2021-09-07T15:48:41.000Z\"\n    },\n    \"result_previous\": {\n        \"id\": 7,\n        \"name\": \"Iko Uwais\",\n        \"birthday\": \"1983-02-12T00:00:00.000Z\",\n        \"deadday\": null,\n        \"rating\": 4,\n        \"createdAt\": \"2021-09-07T15:46:39.000Z\",\n        \"updatedAt\": \"2021-09-07T15:46:39.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete A Cast",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:1927/api/campaigncom/cast/del/7",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"api",
+								"campaigncom",
+								"cast",
+								"del",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:1927/api/campaigncom/cast/del/7",
+									"host": [
+										"localhost"
+									],
+									"port": "1927",
+									"path": [
+										"api",
+										"campaigncom",
+										"cast",
+										"del",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"68-G67Oxl66EhteoS/C8NOBcMECgi8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Sep 2021 15:50:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"The cast ID 7 with name 'Iko Uwais' is deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Test API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1927/",
+					"host": [
+						"localhost"
+					],
+					"port": "1927",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "85"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"55-i65yOwy7VjF+vGBW7EDujLqYwok\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Sep 2021 15:41:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"statustext\": \"OK\",\n    \"success\": true,\n    \"message\": \"Welcome to Campaign.com API\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Wrong Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1927/ASROMA",
+					"host": [
+						"localhost"
+					],
+					"port": "1927",
+					"path": [
+						"ASROMA"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1927/ASROMA",
+							"host": [
+								"localhost"
+							],
+							"port": "1927",
+							"path": [
+								"ASROMA"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "109"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d-WsXWlgSuzkbsTdDbfQ93dtH4HWc\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Sep 2021 15:42:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 404,\n    \"statusText\": \"Not Found\",\n    \"success\": false,\n    \"message\": \"Wrong route. Please change to the right one\"\n}"
+				}
+			]
+		}
+	]
+}
